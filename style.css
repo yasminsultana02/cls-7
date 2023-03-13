@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+nav{
+    background: rgb(232, 116, 58);
+    height: 80px;
+    
+}
+label.logo{ 
+    color: rgb(244, 243, 246);
+    font-size: 45px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family:  'Kaushan Script', cursive;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    Color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+     
+
+}
+ a.active,a:hover{
+   background: rgb(225, 101, 39); 
+    transition: 0.8s;
+ }  
+ .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+ }
+#check{
+    display: none;
+}
+.hero {
+    position: relative;
+    background: url(https://3dzip.org/wp-content/uploads/2022/03/12096.-Free-3D-Diamond-Store-Interior-Model-Download-By-Vu-Huy-Hien-1.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 255px ;
+    z-index: 2;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 250px;
+    
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+    
+
+.hero h1{
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.hero a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin: 20px;
+}
+.Products{
+
+    position: relative;
+    transition: 0.5s;
+   
+}
+.Products ul {
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          background: #fff;
+          transition: 0.5s;
+          transform: scaleX(0);
+          
+
+}
+.Products ul li a {
+    color: black;
+    padding: 5px !important;
+
+    
+
+
+}
+.Products:hover.Products ul{
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+    transition: 0.5s;
+    transform: scaleX(1);
+
+}
+.Products ul li{
+    line-height: 10px !important;
+}
